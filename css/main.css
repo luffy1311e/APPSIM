@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+/* Global */
+h2 {
+  text-transform: uppercase;
+}
+h3 {
+  text-transform: uppercase;
+}
+h5{
+  font-size: .8em;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding: 0 10px;
+}
+.container {
+  width: 98%;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  clear: both;
+  content: '';
+  height: 0;
+}
+/* Header */
+nav.navegacion {
+  background-color: #080808;
+  margin-bottom: 10px;
+}
+nav.navegacion ul.menu {
+  height: 70px; 
+}
+nav.navegacion ul.menu li:last-child {
+  margin-left: 830px;
+}
+nav.navegacion ul.menu li {
+  display: inline-block;
+  padding: 20px;
+}
+nav.navegacion ul.menu li a {
+  color: #999999;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+nav.navegacion ul.menu li a:hover {
+  color: #ffffff;
+}
+/* Main */
+section.informacion-principal {
+  width: 60%;
+  float: left;
+  background-color: #d1d1d1;
+  border-radius: 2%;
+  border: 1px solid #000;
+}
+section.informacion-principal h2 {
+  padding-left: 10px;
+}
+section.informacion-principal h3 {
+  padding-left: 10px;
+}
+section.informacion-principal .image {
+  border: 5px solid #ffffff;
+}
+section.informacion-principal .image img {
+  width: 100%;
+  padding: 10px;
+}
+main {
+  margin-right: 20px;
+}
+/*aside*/
+aside.sidebar {
+  width: 40%;
+  float: right;
+  background-color: #d1d1d1;
+  border-radius: 2%;
+  border: 1px solid #000;
+  margin-right: 5px;
+}
+aside.sidebar h3 {
+  padding-left: 10px;
+}
+/*footer */
+footer {
+
+}
+footer.site-footer {
+  width: 100%;
+  background-color: #3B3939;
+  /*margin: 0 auto;
+  font-family: "trebuchet ms", sans-serif;
+  font-size: 100%;
+  text-align: center;
+  color: #a8aa94;
+  padding: 28px 0 5px 0;
+  position: absolute;
+  bottom: 0;*/
+}
+footer.site-footer .informacion-footer {
+  width: 100%;
+  background-color: #3B3939;
+  margin: 0 auto;
+  font-family: "trebuchet ms", sans-serif;
+  font-size: 100%;
+  text-align: center;
+  color: #a8aa94;
+  padding: 28px 0 5px 0;
+  /*position: absolute;
+  bottom: 0;*/
+}
