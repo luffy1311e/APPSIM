@@ -16,9 +16,6 @@ h2 {
 h3 {
   text-transform: uppercase;
 }
-h5{
-  font-size: .8em;
-}
 p {
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
@@ -27,6 +24,22 @@ p {
 .container {
   width: 98%;
   margin: 0 auto;
+}
+@media only screen and (min-width: 480px) {
+  .contenedor {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contenedor {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contenedor {
+    width: 90%;
+    max-width: 1100px;
+  }
 }
 ul {
   list-style: none;
@@ -47,7 +60,7 @@ nav.navegacion {
   margin-bottom: 10px;
 }
 nav.navegacion ul.menu {
-  height: 70px; 
+  height: 70px;
 }
 nav.navegacion ul.menu li:last-child {
   margin-left: 830px;
@@ -66,6 +79,17 @@ nav.navegacion ul.menu li a:hover {
   color: #ffffff;
 }
 /* Main */
+/*@media only screen and (min-width: 768px) {
+  section.informacion-principal {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 480px) {
+  section.informacion-principal {
+    width: 100%;
+    margin: 5px;
+  }
+}*/
 section.informacion-principal {
   width: 60%;
   float: left;
@@ -79,12 +103,10 @@ section.informacion-principal h2 {
 section.informacion-principal h3 {
   padding-left: 10px;
 }
-section.informacion-principal .image {
-  border: 5px solid #ffffff;
-}
 section.informacion-principal .image img {
-  width: 100%;
+  width: 80%;
   padding: 10px;
+  margin: 0 auto;
 }
 main {
   margin-right: 20px;
@@ -98,34 +120,39 @@ aside.sidebar {
   border: 1px solid #000;
   margin-right: 5px;
 }
+/*@media only screen and (min-width: 768px) {
+  aside.sidebar {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  aside.sidebar {
+    width: 100%;
+  }
+}*/
 aside.sidebar h3 {
   padding-left: 10px;
 }
 /*footer */
 footer {
-
+  margin-top: 20px;
 }
-footer.site-footer {
+div.site-footer {
   width: 100%;
   background-color: #3B3939;
-  /*margin: 0 auto;
-  font-family: "trebuchet ms", sans-serif;
-  font-size: 100%;
   text-align: center;
-  color: #a8aa94;
-  padding: 28px 0 5px 0;
-  position: absolute;
-  bottom: 0;*/
-}
-footer.site-footer .informacion-footer {
-  width: 100%;
-  background-color: #3B3939;
   margin: 0 auto;
   font-family: "trebuchet ms", sans-serif;
   font-size: 100%;
   text-align: center;
-  color: #a8aa94;
   padding: 28px 0 5px 0;
-  /*position: absolute;
-  bottom: 0;*/
+  color: #a8aa94;
+}
+div.site-footer p {
+  text-align: center;
+}
+div.site-footer p a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #a8aa94;
 }
